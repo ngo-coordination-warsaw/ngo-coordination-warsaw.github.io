@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "suisse";
+    src: url("./fonts/SuisseIntl-Regular.otf");
+}
+
+@font-face {
+    font-family: "suisse-mono";
+    src: url("./fonts/SuisseIntlMono-Regular.otf");
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    padding: 15px 0;
+    background: rgb(77,145,158);
+    background: linear-gradient(180deg, rgba(77,145,158,0.36320465686274506) 0%, rgba(180,208,116,0.4052214635854342) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: 100%;
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+
+body{
+    font-family: suisse-mono, Arial, Helvetica, sans-serif;
+}
+
+.header{
+    font-family: suisse;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.main{
+    margin: 50px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 15px;
+}
+
+.header-text span{
+    display: block;
+    font-size: 12px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #389eac;
+    border-color: #389eac;
+}
+
+.btn-primary:hover, .btn-primary:active {
+    color: #fff;
+    background-color: #35727b;
+    border-color: #35727b;
+}
