@@ -3,49 +3,49 @@
   src: url("./fonts/SuisseIntl-Regular.otf");
 }
 
-@font-face {
-  font-family: "suisse-mono";
-  src: url("./fonts/SuisseIntlMono-Regular.otf");
-}
-
 html,
 body {
   min-height: 100%;
 }
 
 body {
-  padding: 15px 0;
-  /* background: rgb(77, 145, 158); */
+  /* background: rgb(77, 145, 158);
   background: linear-gradient(
     180deg,
     rgba(77, 145, 158, 0.36320465686274506) 0%,
     rgba(180, 208, 116, 0.4052214635854342) 100%
   );
   background-repeat: no-repeat;
-  background-size: cover;
-  font-family: suisse-mono, Arial, Helvetica, sans-serif;
-}
-
-section {
-  margin-bottom: 20px;
+  background-size: cover; */
+  color: #222;
+  font-family: suisse, Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
 }
 
 .logo {
   width: 100%;
   max-width: 380px;
   margin-bottom: 20px;
+  min-width: 210px;
+}
+
+.warsaw {
+    width: 100%;
+    max-width: 185px;
 }
 
 .header {
-  font-family: suisse;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
+    background-image: -webkit-linear-gradient(top, #1fa0db 0, #1fa0db 50%, #ffea00 50%, #ffea00 100%);
+    background-image: linear-gradient(180deg, #1fa0db 0, #1fa0db 50%, #ffea00 50%, #ffea00 100%);
+    font-size: 22px;
+}
+
+.header span{
+    font-size: 12px;
+    display: block;
 }
 
 .main {
-  margin: 50px 0;
-  text-transform: uppercase;
   font-size: 14px;
 }
 
@@ -56,17 +56,34 @@ section {
 
 .btn-primary {
   color: #fff;
-  background-color: #389eac;
-  border-color: #389eac;
+  background-color: #1fa0db;
+  border-color: #1fa0db;
 }
 
 .btn-primary:hover,
+.btn-primary:focus,
 .btn-primary:active {
   color: #fff;
-  background-color: #35727b;
-  border-color: #35727b;
+  background-color: #126b94;
+  border-color: #126b94;
 }
 
 .row-gap {
   row-gap: 20px;
 }
+
+.about {
+    text-transform: none;
+    background: #f5f5f5;
+}
+
+.footer {
+    text-transform: none;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        font-size: 14px;
+    }
+  }
